@@ -4,7 +4,7 @@ import React from 'react'
 function App() {
   const handleClick = () => {
     
-    window.location = `https://new.reddit.com/r/randnsfw/`
+    window.location = `https://www.reddit.com/r/randnsfw/`
   }
   return (
     <div className='App' onClick={handleClick}>
