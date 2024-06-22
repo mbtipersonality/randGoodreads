@@ -1,6 +1,5 @@
 import './App.css'
 import React from 'react'
-import search from './search'
 
 function App() {
   const handleClick = () => {
