@@ -1,10 +1,12 @@
 import './App.css'
 import React from 'react'
+import search from './search'
 
 function App() {
   const handleClick = () => {
+    const randSearch = search[Math.floor(Math.random() * (7745 - 1 + 1) + 1 )]
     
-    window.location = `https://www.reddit.com/r/randnsfw/`
+    window.location = `https://redditfavorites.com/?q=${randSearch}`
   }
   return (
     <div className='App' onClick={handleClick}>
