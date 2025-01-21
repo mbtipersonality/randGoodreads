@@ -4,7 +4,7 @@ import search from './search'
 
 function App() {
   const handleClick = () => {
-    const randSearch = search[Math.floor(Math.random() * (2000 - 1 + 1) + 1 )]
+    const randSearch = search[Math.floor(Math.random() * (10000 - 1 + 1) + 1 )]
     
     window.location = `https://www.google.com/search?q=site%3Agoodreads.com+${randSearch}+books&sca_esv=e84d3365b4113c52&ei=1RphZ7ecHKfMseMP5ov8qAE&ved=0ahUKEwj32s6dl66KAxUnZmwGHeYFHxUQ4dUDCA8&uact=5&oq=site%3Agoodreads.com+a+books&gs_lp=Egxnd3Mtd2l6LXNlcnAiGnNpdGU6Z29vZHJlYWRzLmNvbSBhIGJvb2tzSP_IAVCWDVijyAFwAngAkAEBmAGnAqAByAuqAQUwLjMuNLgBA8gBAPgBAZgCAKACAJgDAIgGAZIHAKAHuwI&sclient=gws-wiz-serp`
   }
