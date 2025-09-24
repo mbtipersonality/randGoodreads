@@ -4,7 +4,7 @@ import search from './search'
 
 function App() {
   const handleClick = () => {
-    const randSearch = search[Math.floor(Math.random() * (75 - 1 + 1) + 1 )]
+    const randSearch = search[Math.floor(Math.random() * (1100 - 1 + 1) + 1 )]
     
     window.location = `https://www.goodreads.com/shelf/show/${randSearch}`
     
