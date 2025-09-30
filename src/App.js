@@ -8,6 +8,7 @@ function App() {
     const search2 = JSON.parse(localStorage.getItem('money'))
     if(!search2){
       localStorage.setItem('money', JSON.stringify(search1))
+      return
     }
     const randSearch = search2[Math.floor(Math.random() * (search2.length - 1 + 1) + 1 )]
 
