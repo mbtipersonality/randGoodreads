@@ -1,11 +1,14 @@
 import './App.css'
 import React from 'react'
-// import search from './search'
+import search from './search'
 
 function App() {
   const handleClick = () => {
     // const randSearch = search[Math.floor(Math.random() * (1266 - 1 + 1) + 1 )]
     const search = JSON.parse(localStorage.getItem('money'))
+    if(!search){
+      localStorage.setItem('money', JSON.stringify(search))
+    }
     const randSearch = search[Math.floor(Math.random() * (search.length - 1 + 1) + 1 )]
 
     const newMoney = search.filter(item => item !== randSearch)
