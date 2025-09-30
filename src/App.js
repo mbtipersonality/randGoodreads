@@ -5,7 +5,7 @@ import React from 'react'
 function App() {
   const handleClick = () => {
     // const randSearch = search[Math.floor(Math.random() * (1266 - 1 + 1) + 1 )]
-    const search = localStorage.getItem('money')
+    const search = JSON.parse(localStorage.getItem('money'))
     const randSearch = search[Math.floor(Math.random() * (search.length - 1 + 1) + 1 )]
 
     const newMoney = search.filter(item => item !== randSearch)
