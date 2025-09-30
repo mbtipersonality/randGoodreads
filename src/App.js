@@ -6,7 +6,7 @@ function App() {
   const handleClick = () => {
     // const randSearch = search[Math.floor(Math.random() * (1266 - 1 + 1) + 1 )]
     const search = localStorage.getItem('money')
-    const randSearch = search[Math.floor(Math.random() * (1042 - 1 + 1) + 1 )]
+    const randSearch = search[Math.floor(Math.random() * (search.length - 1 + 1) + 1 )]
 
     const newMoney = search.filter(item => item !== randSearch))
     localStorage.setItem('money', JSON.stringify(newMoney))
