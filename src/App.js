@@ -28,7 +28,7 @@ function App() {
     //   localStorage.setItem('list', JSON.stringify(5))
     // } 
 
-  function generateNumber() {
+  
   let digits = '';
   for (let i = 0; i < 7; i++) {
     digits += Math.floor(Math.random() * 10); // random digit 0-9
@@ -36,7 +36,6 @@ function App() {
   // Remove leading zeros
   let result = parseInt(digits, 10); // parseInt handles leading zeros automatically
   window.location = `https://www.goodreads.com/list/book/${result}`
-}
   }
   return (
     <div className='App' onClick={handleClick}>
