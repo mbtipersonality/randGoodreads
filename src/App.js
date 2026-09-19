@@ -26,7 +26,7 @@ function App() {
     else {
       const list = Array.from({ length: 9999997 }, (_, i) => i + 1);
       console.log("here")
-      localStorage.setItem('list', JSON.stringify(list))
+      localStorage.setItem('list', JSON.stringify(5))
     } 
   }
   return (
