@@ -24,8 +24,7 @@ function App() {
       window.location = `https://www.goodreads.com/list/book/${randomNumber}`
     }
     else {
-      const list = Array.from({ length: 9999997 }, (_, i) => i + 1);
-      console.log("here")
+      // const list = Array.from({ length: 9999997 }, (_, i) => i + 1);
       localStorage.setItem('list', JSON.stringify(5))
     } 
   }
