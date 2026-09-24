@@ -11,7 +11,7 @@ function App() {
       const randomNumber = listfromLocal[Math.floor(Math.random() * listfromLocal.length)];
       const newList = listfromLocal.filter(item => item !== randomNumber)
       localStorage.setItem('list', JSON.stringify(newList))
-      window.location = `https://www.goodreads.com/list/book/${randomNumber}`
+      window.location = `https://goodreads.com/book/show/${randomNumber}`
     }
     else {
       const list = Array.from({ length: 10000 }, (_, i) => i + 1);
